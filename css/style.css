@@ -1,0 +1,778 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif !important;
+  width: 100%;
+  min-height: 100vh; 
+  position: relative;
+  background-color: #000000;
+  
+  /* Mesh Gradient Layers */
+  background-image: 
+    radial-gradient(at 0% 0%, #FF007B 0px, transparent 55%),
+    radial-gradient(at 100% 0%, #1100FF 0px, transparent 55%),
+    radial-gradient(at 100% 100%, #FF007B 0px, transparent 55%),
+    radial-gradient(at 0% 100%, #1100FF 0px, transparent 55%),
+    radial-gradient(at 50% 50%, #000000 0px, transparent 55%);
+  
+  background-size: 200% 200%;
+  animation: meshAnimation 15s ease infinite;
+  background-attachment: fixed; /* Keeps the gradient from scrolling with the page */
+  cursor: none;
+}
+
+/* The 0.6 Opacity Overlay */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(40px);
+  z-index: 1;
+  pointer-events: none; /* Allows clicking through the overlay to links/buttons */
+}
+p,h1,h2,h3,h4,h5{
+   font-family: "Poppins", sans-serif !important;
+}
+.container-fluid{
+  width: 90%;
+}
+.content {
+  position: relative;
+  z-index: 10;
+  color: white;
+ 
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes meshAnimation {
+  0% { background-position: 0% 0%; }
+  25% { background-position: 100% 0%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+section{
+  margin: 100px 0px !important;
+}
+
+p{
+  font-size: 16px;
+}
+  @media (max-width: 768px) {
+            .container-fluid{
+  width: 100%;
+}
+p {
+    font-size: 13px;
+}
+section {
+    margin: 0px 0px !important;
+}
+
+        }
+/* --------------------------------banner-----------------------*/
+
+/* Deep Gradient Background */
+        .hero-section {
+            height: 100vh;
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        /* Top Bar Info */
+        .header-meta {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: -10px; /* Pulls the main text closer */
+        }
+.header-meta a {
+  text-decoration: none;
+}
+        .linkedin-icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Main SVG Logo */
+        .main-logo-svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Bottom Footer Info */
+        .footer-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -10px;
+            font-size: 0.9rem;
+            font-weight: 300;
+             font-family: "Poppins", sans-serif;
+        }
+
+        .footer-meta .role {
+            opacity: 0.8;
+        }
+
+        .footer-meta .year {
+            font-weight: 400;
+             font-family: "Poppins", sans-serif;
+        }
+
+       .designer-name {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-family: "Poppins", sans-serif;
+    color: #ffff;
+}
+          @media (max-width: 768px) {
+     .content-wrapper {
+            width: 100%;
+            max-width: 900px;
+            padding: 0px;
+        }
+.profile-img {
+    max-width: 100%;
+    filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5));
+}
+  .profile-img-wrapper {
+        margin-top: -61px;
+        text-align: center;
+    }
+    .footer-meta .role {
+    opacity: 0.8;
+    margin-top: 10px;
+}
+        }
+/* --------------------------------banner-----------------------*/
+
+/*=====================Cursor============================= */
+.cursor {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.outer {
+  border: 1px solid #f7f7f770;
+}
+
+.inner {
+  background: #f7f7f720;
+  transition: 250ms ease-out;
+}
+
+.cursor.hover {
+  transform: translate(-50%, -50%) scale(4);
+  transition: transform 250ms ease-in-out;
+}
+
+.inner.hover {
+  background: #f7f7f7;
+  mix-blend-mode: difference;
+}
+
+#cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+/*=====================Cursor============================= */
+
+ /*=====================about me============================= */
+
+
+    /* Heading Styling */
+.main-heading {
+     font-size: 7rem;
+            font-weight: 700;
+            line-height: 1;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+             font-family: "Poppins", sans-serif !important;
+
+}
+
+/* Profile Image positioning to overlap text */
+.profile-img-wrapper {
+    margin-top: -60px; /* Pulls image up over the name */
+    position: relative;
+    z-index: 2;
+}
+
+.profile-img {
+    max-width: 90%;
+    filter: drop-shadow(0 20px 50px rgba(0,0,0,0.5));
+}
+
+/* Text sizes */
+.small-text {
+    font-size: 0.9rem;
+    text-align: justify;
+     font-family: "Poppins", sans-serif !important;
+}
+
+.x-small {
+    font-size: 0.75rem;
+     font-family: "Poppins", sans-serif !important;
+}
+
+/* Social Icon Boxes */
+.social-box {
+    /* The Glass Effect */
+    background: rgba(255, 255, 255, 0.05); /* Very subtle white tint */
+    backdrop-filter: blur(10px);           /* The frosting effect */
+    -webkit-backdrop-filter: blur(10px);   /* Safari support */
+    
+    /* Border & Definition */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    
+    /* Layout & Sizing */
+    width: 86px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;}
+
+.social-box:hover {
+   background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.social-box img {
+    width: 35px;
+}
+
+/* Skill Icons */
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .main-heading {
+        font-size: 3.3rem;
+    }
+    .skill-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.social-box img {
+    width: 25px;
+}
+.social-box {
+    
+    width: 50px;
+    height: 50px;
+    
+}
+.gap-4 {
+    gap: 10px !important;
+}
+}
+/*=====================about me============================= */
+
+
+/*=====================work exeperience============================= */
+
+.experience-header {
+    font-size: 8rem;
+    font-weight: 800;
+    margin-bottom: 60px;
+    letter-spacing: -1px;
+     font-family: "Poppins", sans-serif !important;
+}
+
+        .experience-item {
+            margin-bottom: 50px;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+             font-family: "Poppins", sans-serif !important;
+        }
+
+        .experience-item:hover {
+            opacity: 1;
+        }
+
+        /* The outlined number style */
+        .exp-number {
+            font-size: 7rem;
+            font-weight: 700;
+            line-height: 1;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+             font-family: "Poppins", sans-serif !important;
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+             font-family: "Poppins", sans-serif !important;
+        }
+
+        .company-info {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin-bottom: 15px;
+             font-family: "Poppins", sans-serif !important;
+        }
+
+        .date-range {
+            font-size: 0.9rem;
+            color: #b0b0b0;
+             font-family: "Poppins", sans-serif !important;
+        }
+
+        .job-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #b0b0b0;
+             font-family: "Poppins", sans-serif !important;
+           
+        }
+
+        .job-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .experience-header { font-size: 8.5rem; }
+            .exp-number { font-size: 6rem; margin-bottom: 10px; }
+            .job-description {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #b0b0b0;
+    font-family: "Poppins", sans-serif !important;
+}
+        }
+
+        /*=====================work exeperience============================= */
+
+
+
+/*=====================Testimonial============================= */
+:root {
+  --dark: #252A2E;
+  --light: #F5F5F5;
+  --background: var(--light);
+  --text: var(--dark);
+  --border: var(--dark);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--dark);
+    --text: var(--light);
+    --border: var(--light);
+  }
+}
+
+
+/*  CURRENT MAX WIDTH IS JUST FOR DEMO PURPOSES */
+.tag-scrollers {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+/*  POSSIBLY UPDATE COLORS IN THE GRADIENT
+    TO MATCH THE PROJECTS DESIGN SYSTEM
+*/
+.tag-scroller {
+  display: grid;
+  gap: 1.5rem;
+  mask: linear-gradient(90deg, #0000, var(--background) 15%, var(--background) 85%, #0000);
+}
+
+.tag-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  /*  IF THE GAP IS CHANGED, DON'T FORGET TO CHANGE 
+      THE TRANSFORM VALUE IN THE SCROLL ANIMATION
+      AT THE END OF THE STYLING
+  */
+  gap: 1.5rem;
+}
+
+/*  IF THE USERS PREFERS REDUCED MOTION
+    PRESENT THEM WITH A HOROZONTAL LIST
+    OF ALL ELEMENTS AND GIVE THEM THE
+    OPTION TO MANUALLY SCROLL BY SWIPING
+*/
+@media (prefers-reduced-motion) {
+  .tag-list {
+    flex-flow: row nowrap;
+    overflow: auto;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+  }
+  .tag-list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .tag-list::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .tag-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+/*  BASIC STYLING OF THE LIST ITEMS
+    FOR DEMO PURPOSES. MOST PROPERTIES
+    SHOULD BE KEPT AS IS BUT PROBABLY
+    UPDATE THE VALUE FOR font-family
+    AND border
+*/
+.tag-list li {
+  
+  font-size: 1.125rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/*  THE DURATION IS SET FROM A CUSTOM PROPERTY
+    CALCULATED IN THE SCRIPT AS IT'S ONLY NEEDED
+    IF THE ANIMATION SHOULD RUN, WHICH IS ALSO
+    CHECKED BY THE SCRIPT
+
+    THE DIRECTION IS SET TO normal AS DEFULT
+    AND THEN SET TO reverse FOR EVERY OTHER SCROLLER
+*/
+.tag-scroller.scrolling .tag-list {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: horizontal-scroll var(--duration) var(--direction, normal) linear infinite;
+}
+
+.tag-scroller.scrolling .tag-list:nth-child(even) {
+  --direction: reverse;
+}
+
+/* PAUSING THE ANIMATION ON HOVER */
+.tag-scroller:hover .tag-list {
+  animation-play-state: paused;
+}
+
+@keyframes horizontal-scroll {
+  to {
+    /*  0.75rem FOR HALF THE GAP
+        OF THE .tag-scroller
+    */
+    transform: translateX(calc(-50% - .75rem));
+  }
+}
+
+/*=====================Testimonial============================= */
+
+
+
+:root {
+            --bg-gradient: linear-gradient(135deg, #0f021a 0%, #2e0d3a 50%, #0f021a 100%);
+            --card-glass: rgba(255, 255, 255, 0.05);
+            --card-border: rgba(255, 255, 255, 0.1);
+        }
+
+
+        .section-title {
+            font-size: 5rem;
+            font-weight: 800;
+            margin-bottom: 60px;
+            letter-spacing: -2px;
+        }
+
+        /* Glassmorphism Card Style */
+        .testimonial-card {
+            background: var(--card-glass);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 30px;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .star-rating {
+            color: #ffc107;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+
+        .user-info img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 12px;
+        }
+
+      .user-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 8px 0px;
+}
+
+        .user-role {
+            font-size: 0.75rem;
+            opacity: 0.6;
+            margin: 0;
+        }
+
+        /* Offset rows for that staggered look */
+        .row-staggered {
+            margin-bottom: 30px;
+        }
+
+        .row-staggered:nth-child(even) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .section-title { font-size: 3rem; }
+            .row-staggered:nth-child(even) { padding: 0; }
+            .testimonial-text {
+    font-size: 13px;
+    
+}
+        }
+
+/*=====================Testimonial============================= */
+
+
+/*===================== work============================= */
+
+/* demo */
+
+
+
+
+
+
+/* horizontal scroll */
+
+#horizontal-scoll {
+  overflow: hidden;
+  padding: 0px 0;
+}
+
+.horizontal-scoll-wrapper {
+  margin-left: 100px;
+  height: 525px;
+}
+
+.horizontal {
+  display: flex;
+  height: 100%;
+}
+
+.horizontal .card {
+  background: none;
+  margin-right:20px;
+}
+
+.horizontal .card img{
+  background: none;
+  height:515px;
+}
+
+@media (max-width: 768px) {
+            .horizontal .card img {
+    background: none;
+    height: 300px;
+}
+        }
+
+/*===================== work============================= */
+
+
+
+/*===================== Contact ============================= */
+
+
+        .contact-section {
+            padding: 80px 0;
+            width: 100%;
+        }
+
+        .section-title {
+            font-size: clamp(3rem, 10vw, 7rem); /* Responsive typography */
+            font-weight: 700;
+            margin-bottom: 50px;
+            letter-spacing: -2px;
+        }
+
+        /* Glassmorphism Input Styling */
+        .form-control {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: white !important;
+            padding: 15px 20px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: none;
+            outline: none;
+        }
+
+        /* Placeholder color */
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Message Box */
+        textarea.form-control {
+            min-height: 150px;
+            resize: none;
+        }
+
+        /* Gradient Button */
+        .btn-submit {
+            background: linear-gradient(90deg, #ff00cc 0%, #3333ff 100%);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            padding: 12px 0;
+            width: 100%;
+            margin-top: 20px;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.9;
+            color: white;
+        }
+
+        /* Spacing for mobile */
+        @media (max-width: 768px) {
+            .g-custom {
+                --bs-gutter-y: 1rem;
+            }
+        }
+/*===================== Contact ============================= */
+
+
+/*===================== Footers ============================= */
+
+
+
+/* Email & Arrow Positioning */
+.contact-info {
+    margin-top: 10px;
+    padding-left: clamp(150px, 35%, 380px); /* Positions it under the 'Together' tail */
+}
+
+.arrow {
+    font-size: 2rem;
+    margin-bottom: -5px;
+}
+
+.email {
+    color: #fff;
+    
+}
+.footer-head{
+  line-height: 1;
+}
+
+
+/* Footer Section */
+.divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 40px 0 20px 0;
+}
+
+.copyright {
+    font-size:16px;
+    opacity: 0.6;
+    padding-bottom: 10px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 991px) {
+    .main-heading {
+        letter-spacing: -1px;
+        margin-bottom: 30px;
+    }
+    .contact-info {
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+    .description {
+        max-width: 100%;
+    }
+}
+  @media (max-width: 768px) {
+            .copyright {
+    font-size:13px;
+    opacity: 0.6;
+    padding-bottom: 10px;
+}
+.footer-wrapper {
+    padding-bottom: 20px;
+}
+        }
+
+/*===================== Footers ============================= */
+
+
+
+

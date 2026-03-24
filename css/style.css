@@ -9,10 +9,10 @@ body {
   
   /* Mesh Gradient Layers */
   background-image: 
-    radial-gradient(at 0% 0%, #FF007B 0px, transparent 55%),
-    radial-gradient(at 100% 0%, #1100FF 0px, transparent 55%),
-    radial-gradient(at 100% 100%, #FF007B 0px, transparent 55%),
-    radial-gradient(at 0% 100%, #1100FF 0px, transparent 55%),
+    radial-gradient(at 0% 0%, #000000 0px, transparent 55%),
+    radial-gradient(at 100% 0%, #6D6D6D 0px, transparent 55%),
+    radial-gradient(at 100% 100%, #000000 0px, transparent 55%),
+    radial-gradient(at 0% 100%, #6D6D6D 0px, transparent 55%),
     radial-gradient(at 50% 50%, #000000 0px, transparent 55%);
   
   background-size: 200% 200%;
@@ -221,7 +221,7 @@ section {
 
 /* Profile Image positioning to overlap text */
 .profile-img-wrapper {
-    margin-top: -60px; /* Pulls image up over the name */
+    margin-top: -95px; /* Pulls image up over the name */
     position: relative;
     z-index: 2;
 }
@@ -686,7 +686,7 @@ section {
 
         /* Gradient Button */
         .btn-submit {
-            background: linear-gradient(90deg, #ff00cc 0%, #3333ff 100%);
+            background: linear-gradient(90deg, #1C1C1C 0%, #1C1C1C 100%);
             border: none;
             border-radius: 8px;
             color: white;

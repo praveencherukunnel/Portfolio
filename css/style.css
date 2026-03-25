@@ -10,9 +10,9 @@ body {
   /* Mesh Gradient Layers */
   background-image: 
     radial-gradient(at 0% 0%, #000000 0px, transparent 55%),
-    radial-gradient(at 100% 0%, #6D6D6D 0px, transparent 55%),
+    radial-gradient(at 100% 0%, #ffffff 0px, transparent 55%),
     radial-gradient(at 100% 100%, #000000 0px, transparent 55%),
-    radial-gradient(at 0% 100%, #6D6D6D 0px, transparent 55%),
+    radial-gradient(at 0% 100%, #ffffff 0px, transparent 55%),
     radial-gradient(at 50% 50%, #000000 0px, transparent 55%);
   
   background-size: 200% 200%;

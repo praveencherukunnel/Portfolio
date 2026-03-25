@@ -29,11 +29,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/gravity-animation.css" rel="stylesheet">
 </head>
 
 <body>
 <div class="content">
- <section class="hero-section mt-0">
+ <section class="hero-section mt-0 center" id="welcome">
     <div class="container d-flex justify-content-center">
         <div class="content-wrapper">
             
@@ -62,27 +63,29 @@
 
 <section class="about-section py-5">
     <div class="container-fluid">
-        <div class="row align-items-center">
+       <div class="about-container" data-aos="fade-up" data-aos-duration="500">
+
+         <div class="row ">
             
             <div class="col-lg-6 position-relative mb-5 mb-lg-0">
-                <p class="phara" data-aos="fade-up" data-aos-duration="500">Hello, i am</p>
-                <h1 class="display-1 fw-bold main-heading" data-aos="fade-up" data-aos-duration="500">Praveen<br>Cherukunnel</h1>
+                <p class="phara" >Hello, i am</p>
+                <h1 class="display-1 fw-bold main-heading" >Praveen<br>Cherukunnel</h1>
                 <div class="profile-img-wrapper">
-                    <img src="img/praveen-profile.svg" alt="Praveen Cherukunnel" class="img-fluid profile-img" data-aos="fade-up" data-aos-duration="500">
+                    <img src="img/praveen-profile.svg" alt="Praveen Cherukunnel" class="img-fluid profile-img" >
                 </div>
             </div>
 
             <div class="col-lg-6">
                 <div class="content-wrapper">
-                    <h2 class="h4 fw-bold mb-3" data-aos="fade-up" data-aos-duration="500">About Me</h2>
-                    <p class="phara" data-aos="fade-up" data-aos-duration="500">
-                        I believe that a design vision is only as strong as its execution. As a UI/UX Designer with a deep understanding of frontend development, I occupy the vital space between how a product looks and how it actually lives in the browser.</br>
-My process begins with Human-Centered Design. I dive into user behavior to uncover the "why" behind their pain points, translating those insights into strategic wireframes and high-fidelity interfaces. But I don’t stop at the handoff. I leverage my technical background to ensure that every pixel, transition, and interaction is implemented with clean, accessible, and performant code.</br>
-By speaking both the languages of design and development, I eliminate the friction that often exists between the two. The result? Exceptional digital products that are as robust under the hood as they are beautiful on the surface.
+                    <h2 class="h4 fw-bold mb-3" >About Me</h2>
+                    <p class="phara opacity-50">
+                        I believe that a design vision is only as strong as its execution. As a UI/UX Designer with a deep understanding of frontend development, I occupy the vital space between how a product looks and how it actually lives in the browser.<br>
+                        My process begins with Human-Centered Design. I dive into user behavior to uncover the "why" behind their pain points, translating those insights into strategic wireframes and high-fidelity interfaces. But I don’t stop at the handoff. I leverage my technical background to ensure that every pixel, transition, and interaction is implemented with clean, accessible, and performant code.<br>
+                        By speaking both the languages of design and development, I eliminate the friction that often exists between the two. The result? Exceptional digital products that are as robust under the hood as they are beautiful on the surface.
                     </p>
 
-                    <h2 class="h4 fw-bold mb-3" data-aos="fade-up" data-aos-duration="500">Social</h2>
-                    <div class="d-flex gap-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                    <h2 class="h4 fw-bold mb-3" >Social</h2>
+                    <div class="d-flex gap-4 mb-4">
                         <a href="https://www.linkedin.com/in/praveen-cherukunnel/" class="social-box"><img src="img/linked-in.svg" alt="LinkedIn"></a>
                         <a href="https://www.behance.net/praveencp3" class="social-box"><img src="img/behance.svg" alt="Behance"></a>
                         <a href="https://www.instagram.com/praveen_cherukunnel/" class="social-box"><img src="img/instagram.svg" alt="Instagram"></a>
@@ -90,58 +93,64 @@ By speaking both the languages of design and development, I eliminate the fricti
                         <a href="https://www.facebook.com/praveen.cherukunnel" class="social-box"><img src="img/facebook.svg" alt="FB"></a>
                     </div>
 
-                    <h2 class="h4 fw-bold mb-2" data-aos="fade-up" data-aos-duration="500">Education</h2>
+                    <h2 class="h4 fw-bold mb-2" >Education</h2>
                     <div class="mb-4">
-                        <p class="phara mb-0 fw-bold" data-aos="fade-up" data-aos-duration="500">Diploma (Computer Science)</p>
-                        <p class="phara mb-0" data-aos="fade-up" data-aos-duration="500">Board of Technical Examination</p>
-                        <p class="phara opacity-50" data-aos="fade-up" data-aos-duration="500">St. Mary's Polytechnical College, Valliyodu, Palakkad</p>
+                        <p class="phara mb-0 fw-bold" >Diploma (Computer Science)</p>
+                        <p class="phara mb-0"  >Board of Technical Examination</p>
+                        <p class="phara opacity-50" >St. Mary's Polytechnical College, Valliyodu, Palakkad</p>
                     </div>
 
-                    <h2 class="h4 fw-bold mb-3" data-aos="fade-up" data-aos-duration="500">Skills</h2>
-                    <div class="d-flex flex-wrap gap-4" data-aos="fade-up" data-aos-duration="500">
+                    <h2 class="h4 fw-bold mb-3" >Skills</h2>
+                    <div class="d-flex flex-wrap gap-4 mb-3" >
                         <img src="img/ps-icon.svg" class="skill-icon" alt="Photoshop">
                         <img src="img/ai-icon.svg" class="skill-icon" alt="Illustrator">
                         <img src="img/ae-icon.svg" class="skill-icon" alt="After Effects">
                         <img src="img/figma-icon.svg" class="skill-icon" alt="Figma">
                         <img src="img/framer-icon.svg" class="skill-icon" alt="Framer">
-                    </div>
-                    <div class="d-flex flex-wrap gap-4" data-aos="fade-up" data-aos-duration="500">
-                        <img src="img/html-icon.svg" class="skill-icon" alt="Photoshop">
-                        <img src="img/css-icon.svg" class="skill-icon" alt="Illustrator">
-                        <img src="img/boostrap-icon.svg" class="skill-icon" alt="After Effects">
-                        <img src="img/github-icon.svg" class="skill-icon" alt="Figma">
-                        <img src="img/vscode-icon.svg" class="skill-icon" alt="Framer">
+                        <img src="img/replit-icon.svg" class="skill-icon" alt="Replit">
+                        <img src="img/glab-icon.svg" class="skill-icon" alt="glab">
                         
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    <div class="d-flex flex-wrap gap-4" >
+                        <img src="img/html-icon.svg" class="skill-icon" alt="html">
+                        <img src="img/css-icon.svg" class="skill-icon" alt="css">
+                        <img src="img/boostrap-icon.svg" class="skill-icon" alt="bootstrap">
+                        <img src="img/github-icon.svg" class="skill-icon" alt="github">
+                        <img src="img/vscode-icon.svg" class="skill-icon" alt="vscode">
+                    </div>
+                </div> 
+            </div> 
+        </div>    
+       </div>
+    </div> 
 </section>
 
 
 
 
 <section class="section-workexperience">
-    <div class="container">
+    <div class="container-fluid">
     <div class="row">
         <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="500">
             <h1 class="section-title">Work Experience</h1>
         </div>
     </div>
 
-    <div class="row experience-item" data-aos="fade-up" data-aos-duration="500">
-        <div class="col-md-2 d-flex justify-content-md-end">
-            <span class="exp-number">5</span>
+
+<div class="row experience-item" data-aos="fade-up" data-aos-duration="500">
+        <div class="col-md-1 ">
+            <span class="exp-number">4</span>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-3">
             <div class="d-md-flex justify-content-between align-items-baseline">
                 <div>
                     <h3 class="job-title">UI / UX DESIGNER</h3>
-                    <p class="company-info">Cloudium Software PVT LTD</p>
+                    <p class="company-info mb-0">Cloudium Software PVT LTD</p>
+                    <div class="date-range fst-italic mb-3">From 2023 to Present</div>
                 </div>
-                <span class="date-range">From 2023 to Present</span>
             </div>
+        </div>
+       <div class="col-md-8">
             <div class="job-description">
                 <ul>                   
                   <li>Gather user stories from clients and discuss with team to meet requirements. </li>
@@ -154,19 +163,20 @@ By speaking both the languages of design and development, I eliminate the fricti
         </div>
     </div>
 
-
        <div class="row experience-item" data-aos="fade-up" data-aos-duration="500">
-        <div class="col-md-2 d-flex justify-content-md-end">
+        <div class="col-md-1 ">
             <span class="exp-number">4</span>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-3">
             <div class="d-md-flex justify-content-between align-items-baseline">
                 <div>
                     <h3 class="job-title">UI / UX DESIGNER, FROND-END WEB DEVELOPER</h3>
-                    <p class="company-info">Manjila and Singh Innotech Pvt Ltd</p>
+                    <p class="company-info mb-0">Manjila and Singh Innotech Pvt Ltd</p>
+                    <div class="date-range fst-italic mb-3">From 2020 to 2023</div>
                 </div>
-                <span class="date-range">From 2020 to 2023</span>
             </div>
+        </div>
+        <div class="col-md-8">
             <div class="job-description">
                 <ul>                   
                   <li>Develop UI mock-ups that illustrate how sites function and its respective functionalities. </li>
@@ -180,18 +190,20 @@ By speaking both the languages of design and development, I eliminate the fricti
     </div>
 
       <div class="row experience-item" data-aos="fade-up" data-aos-duration="500">
-        <div class="col-md-2 d-flex justify-content-md-end">
+        <div class="col-md-1 ">
             <span class="exp-number">3</span>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-3">
             <div class="d-md-flex justify-content-between align-items-baseline">
                 <div>
                     <h3 class="job-title">WEB DESIGNER</h3>
-                    <p class="company-info">Cenveo Solutions Pvt Ltd     </p>
+                    <p class="company-info mb-0">Cenveo Solutions Pvt Ltd     </p>
+                    <div class="date-range fst-italic mb-3">From 2019 to 2020</div>
                 </div>
-                <span class="date-range">From 2019 to 2020</span>
             </div>
-            <div class="job-description">
+        </div>
+        <div class="col-md-8">
+                <div class="job-description">
                 <ul>                   
                   <li>Create visually appealing and user-friendly website layouts. </li>
                   <li>Collaborate with clients/stakeholders to understand project   requirements and objectives. </li>
@@ -199,22 +211,24 @@ By speaking both the languages of design and development, I eliminate the fricti
                   <li>Proficient in design tools such as Adobe XD, Adobe Photoshop.</li>
                 </ul>
             </div>
-        </div>
+            </div>
     </div>
 
 
     <div class="row experience-item" data-aos="fade-up" data-aos-duration="500">
-        <div class="col-md-2 d-flex justify-content-md-end">
+        <div class="col-md-1 ">
             <span class="exp-number">2</span>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-3">
             <div class="d-md-flex justify-content-between align-items-baseline">
                 <div>
                     <h3 class="job-title">WEB DESIGNER</h3>
-                    <p class="company-info">Nivow Technologies Pvt Ltd         </p>
+                    <p class="company-info mb-0">Nivow Technologies Pvt Ltd         </p>
+                    <div class="date-range fst-italic mb-3">From 2018 to 2019</div>
                 </div>
-                <span class="date-range">From 2018 to 2019</span>
             </div>
+        </div>
+        <div class="col-md-8">
             <div class="job-description">
                 <ul>                   
                   <li>Manage multiple projects, prioritize tasks, and meet project deadlines. </li>
@@ -228,17 +242,19 @@ By speaking both the languages of design and development, I eliminate the fricti
 
 
       <div class="row experience-item" data-aos="fade-up" data-aos-duration="500">
-        <div class="col-md-2 d-flex justify-content-md-end">
+       <div class="col-md-1 ">
             <span class="exp-number">1</span>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-3">
             <div class="d-md-flex justify-content-between align-items-baseline">
                 <div>
                     <h3 class="job-title">WEB DESIGNER TRAINEE</h3>
-                    <p class="company-info">Spectrum Softech Solution Pvt Ltd              </p>
+                    <p class="company-info mb-0">Spectrum Softech Solution Pvt Ltd              </p>
+                    <div class="date-range fst-italic mb-3">2018</div>
                 </div>
-                <span class="date-range">2018</span>
             </div>
+        </div>
+        <div class="col-md-8">
             <div class="job-description">
                 <ul>                   
                   <li>Acquire knowledge of converting PSD into Web designing using Bootstrap, UI Designing, Logo,  Visiting Cards,. Brochures, Newsletter, HTML Mailer </li>
@@ -519,10 +535,11 @@ By speaking both the languages of design and development, I eliminate the fricti
 
 
 <section class="work-together-section mb-0">
-    <div class="container-fluid ">
+    <div class="container-fluid">
         
-        <div class="row align-items-center flex-grow-1">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="500">
+<div class="footer-container" data-aos="fade-up" data-aos-duration="500">
+            <div class="row align-items-center flex-grow-1">
+            <div class="col-lg-6" >
                <h1 class="section-title footer-head mb-lg-0">Let's<br>Work<br>Together</h1>
                 <div class="contact-info">
                    
@@ -530,23 +547,34 @@ By speaking both the languages of design and development, I eliminate the fricti
             </div>
             <div class="col-2"></div>
 
-            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="500">
-                <p >
+            <div class="col-lg-4">
+                <p class="opacity-50" >
                     Let's create something exceptional together! I'm always excited to connect with forward-thinking brands and individuals who are passionate about design. Drop me a message below to discuss your next big idea, ask a question, or simply say hello.
                 </p>
             </div>
-            <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+            <div class="col-12 text-center" >
      <div class="arrow">↘</div>
-                    <p><a href="mailto:praveenprasad705@gmail.com" class="email">praveenprasad705@gmail.com</a></p>
+                    <p class="mb-0" ><a href="mailto:praveenprasad705@gmail.com" class="email">praveenprasad705@gmail.com</a></p>
 </div>
         </div>
+</div>
 
-        <div class="footer-wrapper">
+        
+    </div>
+</section>  
+
+<section class="mt-0 mb-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-wrapper">
             <hr class="divider">
             <p class="copyright mb-0 pb-0">©2026 praveencherukunnel</p>
         </div>
+            </div>
+        </div>
     </div>
-</section>  
+</section>
 
 
  <div class="cursor outer"></div>
@@ -663,8 +691,6 @@ gsap.to('.horizontal', {
     <script>
   AOS.init();
 </script>
- 
-
    
 </body>
 </html>

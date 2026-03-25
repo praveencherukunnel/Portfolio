@@ -36,6 +36,7 @@ section{
 
 p{
   font-size: 16px;
+  color: #b0b0b0 !important;
 }
   @media (max-width: 768px) {
             .container-fluid{

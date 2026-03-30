@@ -5,9 +5,9 @@ let dots = [];
 // Configuration
 const spacing = 15; // The distance between dots
 const defaultRadius = .5;
-const interactionRadius = 400; // Radius of mouse interaction
-const pushAmount = 40; // How far to push dots away
-const swirlAmount = 20; // Tangential force for circular movement
+const interactionRadius = 200; // Radius of mouse interaction
+const pushAmount = 20; // How far to push dots away
+const swirlAmount = 10; // Tangential force for circular movement
 const easeAmount = 0.08; // How fast dots move to their target
 const mouse = {
     x: -1000,
@@ -51,7 +51,7 @@ class Dot {
             targetX = this.originX - pushX - swirlX;
             targetY = this.originY - pushY - swirlY;
             // Brighter and slightly larger when active
-            targetOpacity = 0.15 + (force * 0.85); // Up to 1.0 opacity
+            targetOpacity = 0.15 + (force * 0.5); // Up to 1.0 opacity
             targetRadius = defaultRadius + (force * 1.5);
         }
         // Ease position to target (smooth interpolation)

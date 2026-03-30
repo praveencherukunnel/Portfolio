@@ -2,12 +2,19 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: #202124;
-    background-image: radial-gradient(#505152 .5px, transparent 0.5px);
-    background-size: 15px 15px;
+    
     cursor: none;
 }
 
-
+#dotsCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Make sure this is behind your content */
+    pointer-events: none; /* Allows clicking on elements on top of the canvas */
+}
 p,h1,h2,h3,h4,h5{
    font-family: "Poppins", sans-serif !important;
 }

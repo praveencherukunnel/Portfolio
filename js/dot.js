@@ -4,7 +4,7 @@ let width, height;
 let dots = [];
 // Configuration
 const spacing = 15; // The distance between dots
-const defaultRadius = .5;
+const defaultRadius = .8;
 const interactionRadius = 200; // Radius of mouse interaction
 const pushAmount = 20; // How far to push dots away
 const swirlAmount = 10; // Tangential force for circular movement

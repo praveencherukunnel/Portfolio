@@ -127,6 +127,30 @@ section {
     font-family: "Poppins", sans-serif;
     color: #ffff;
 }
+
+.download-btn {
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    border: none;
+    border-radius: 60px;
+    color: #000000 !important;
+    font-weight: 600;
+    padding: 20px 15px;
+    width: 30%;
+    margin-top: 55px;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+.download-btn:hover{
+    
+    color: #000000;
+    
+}
+.download-btn:active{
+    
+    color: #000000;
+    
+}
+
           @media (max-width: 768px) {
      .content-wrapper {
             width: 100%;

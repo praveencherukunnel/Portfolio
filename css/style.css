@@ -157,6 +157,18 @@ section {
             max-width: 900px;
             padding: 0px;
         }
+        .download-btn {
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    border: none;
+    border-radius: 60px;
+    color: #000000 !important;
+    font-weight: 600;
+    padding: 15px 10px !important;
+    width: 60% !important;
+    margin-top: 55px;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
 .profile-img {
     max-width: 100%;
     filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5));

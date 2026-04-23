@@ -827,7 +827,7 @@ section {
 .icon-container {
   display: flex;
   gap: 30px;
-  justify-content: center;
+  justify-content: start;
 }
 
 /* 1. The Icon Wrapper */

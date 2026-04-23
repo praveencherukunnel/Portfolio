@@ -822,5 +822,80 @@ section {
 /*===================== Footers ============================= */
 
 
+/*===================== Tooltip ============================= */
+/* Container for alignment */
+.icon-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* 1. The Icon Wrapper */
+.icon-tooltip {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px; 
+  cursor: pointer;
+  color: #555;
+  transition: transform 0.2s ease; /* Slight lift on the icon itself */
+}
+
+/* Optional: Slight pop effect on the icon without hiding it */
+.icon-tooltip:hover {
+  color: #007bff;
+  transform: scale(1); 
+}
+
+/* 2. The Tooltip Box */
+.icon-tooltip::after {
+  content: attr(data-title);
+  position: absolute;
+  /* Shifted further up (160%) to ensure it never covers the icon */
+  bottom: 104%; 
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  
+  background-color: #333;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, transform 0.2s;
+  pointer-events: none; /* User can't accidentally hover the tooltip itself */
+}
+
+/* 3. The Arrow */
+.icon-tooltip::before {
+  content: "";
+  position: absolute;
+  /* Positioned between the box and the icon */
+  bottom: 93%; 
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  border: 6px solid transparent;
+  border-top-color: #333;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+/* 4. The Hover State */
+.icon-tooltip:hover::after,
+.icon-tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+/*===================== Tooltip ============================= */
+
+
+
 
 

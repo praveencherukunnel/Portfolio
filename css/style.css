@@ -61,7 +61,7 @@ section {
 /*=====================Header============================= */
 
 img.img-fluid.logo {
-    width: 7%;
+    width: 9%;
 }
 section.section-logo {
     margin-top: 20px !important;
@@ -97,7 +97,7 @@ section.section-logo {
 
 @media (max-width: 768px) {
 img.img-fluid.logo {
-    width: 20%;
+    width: 28%;
 }
         }
 /*=====================Header============================= */

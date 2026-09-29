@@ -58,6 +58,51 @@ section {
         }
 
 
+/*=====================Header============================= */
+
+img.img-fluid.logo {
+    width: 7%;
+}
+section.section-logo {
+    margin-top: 20px !important;
+}
+.download-btn{
+    font-size: 14px;
+    background: #ffffff;
+    color: #000000;
+    padding: 13px 25px;
+    border-radius: 33px;
+        cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.download-btn:hover{
+    font-size: 14px;
+    background: #000000;
+    color: #ffffff;
+    padding: 13px 25px;
+    border-radius: 33px;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.header-meta a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.hero-section .content-wrapper {
+    height: 60vh !important;
+    margin-top: 200px;
+}
+
+
+@media (max-width: 768px) {
+img.img-fluid.logo {
+    width: 20%;
+}
+        }
+/*=====================Header============================= */
+
+
 
 /*=====================Cursor============================= */
 .cursor {
@@ -701,7 +746,7 @@ section {
 /* Container for alignment */
 .icon-container {
   display: flex;
-  gap: 30px;
+  gap: 22px;
   justify-content: start;
 }
 

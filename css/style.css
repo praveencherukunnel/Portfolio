@@ -63,7 +63,7 @@ section.section-logo {
     margin: 20px 0px !important;
 }
 img.img-fluid.logo {
-    width: 7%;
+    width: 7% !important;
 }
 .download-btn {
     background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
@@ -76,7 +76,7 @@ img.img-fluid.logo {
     margin-top: 0px;
     transition: opacity 0.3s ease;
     text-align: center;
-    font-size:14px;
+    font-size:14px !important;
 }
 .download-btn:hover{
     
@@ -101,7 +101,7 @@ img.img-fluid.logo {
     margin-top: 0px;
     transition: opacity 0.3s ease;
     text-align: center;
-    font-size:14px;
+    font-size:14px !important;
     
 }
 /* --------------------------------Header-----------------------*/

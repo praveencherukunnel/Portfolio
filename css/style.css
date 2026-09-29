@@ -56,6 +56,17 @@ section {
 }
 
         }
+
+/* --------------------------------Header-----------------------*/
+
+section.section-logo {
+    margin: 20px 0px !important;
+}
+img.img-fluid.logo {
+    width: 3%;
+}
+/* --------------------------------Header-----------------------*/
+
 /* --------------------------------banner-----------------------*/
 
 /* Deep Gradient Background */

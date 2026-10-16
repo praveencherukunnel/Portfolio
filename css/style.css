@@ -6,7 +6,6 @@ body {
     cursor: none;
 }
 
-
 #dotsCanvas {
     position: fixed;
     top: 0;
@@ -98,7 +97,7 @@ section.section-logo {
 }
 .hero-section .content-wrapper {
     height: 60vh !important;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 span.designer-name {
@@ -221,7 +220,7 @@ img.img-fluid.logo {
 
       border-radius: 100px;
 
-      background-color: #121212;
+      background-color: #1212125e;
 
       border: 1px solid rgba(244, 246, 242, 0.10);
 
